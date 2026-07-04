@@ -19,7 +19,7 @@
      <link rel="stylesheet" href="css/magnific-popup.css">
 
      <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/main-style.css">
+     <link rel="stylesheet" href="css/main-styles.css">
 
 </head>
 <body>
@@ -44,7 +44,7 @@
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="index.html" class="navbar-brand">Colline <span>.</span> D'asie</a>
+                    <a href="index.html" class="navbar-brand">Eatery <span>.</span> Cafe</a>
                     <!-- To put : logo of colline d'asie -->
 
                </div>
@@ -64,6 +64,7 @@
                          <a href="#footer" class="section-btn">Reserve a table</a>
                     </ul>
                </div>
+
           </div>
      </section>
 
