@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 body {
-  background: #ffffff;
+  background: #FFF9D6;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
 }
@@ -301,15 +301,13 @@ section {
   }
 
   .top-nav-collapse .nav li a {
-    color: #575757;
+    color: #1F1F1F;
   }
 
   .top-nav-collapse .nav .section-btn a {
     color: #fad02c;
   }
 }
-
-
 
 /*---------------------------------------
     HOME              
@@ -372,7 +370,8 @@ section {
   justify-content: center;
   flex-direction: column;
   text-align: left;
-  background-color: rgba(20,20,20,0.2);
+  background-color: transparent;
+  /*rgba(20,20,20,0.2)*/
   height: 100%;
   color: #fff;
   cursor: e-resize;
@@ -384,11 +383,11 @@ section {
   background-repeat: no-repeat;
   background-attachment: local;
   background-size: cover;
-  height: 650px;
+  height: 800px;
 }
 
 .slider .item-first {
-  background-image: url(../images/slider-image1.jpg);
+  background-image: url(../images/testing_file.jpg);
 }
 
 .slider .item-second {
@@ -419,7 +418,15 @@ section {
   color: #ffffff;
 }
 
+/*---------------------------------------
+    SEPERATOR
+-----------------------------------------*/
 
+.separator {
+  width: 100%;
+  height: 100px;
+  color: #888;
+}
 
 /*---------------------------------------
     ABOUT              
