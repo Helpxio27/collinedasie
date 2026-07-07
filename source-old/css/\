@@ -32,7 +32,7 @@ h3 {
 
 h3,
 h3 a {
-  color: #ce3232;
+  color: #ffffff;
 }
 
 p {
@@ -42,6 +42,7 @@ p {
   line-height: 24px;
 }
 
+
 /* GENERAL */
 
 html{
@@ -49,7 +50,7 @@ html{
 }
 
 a{
-  color: #252525; /* 252525 */
+  color: #252525;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
@@ -329,50 +330,6 @@ section {
   text-transform: uppercase;
   margin: 0;
 }
-
-#home::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-}
-
-.language-selector > a {
-    color: white !important;
-}
-
-.language-selector > a:hover,
-.language-selector > a:focus {
-    color: white !important;
-}
-
-.language-btn {
-    border: 1px solid rgba(255,255,255,0.7);
-    border-radius: 20px;
-    /*padding: 10px 18px !important;*/
-    margin-top: 0px;
-    transition: all 0.3s ease;
-    color: white !important;
-    background: #ce3232;
-}
-
-.language-btn:hover {
-    background: #ce3232;
-    color: #333333 !important;
-    border-color: white;
-}
-/*
-.custom-navbar.top-nav-collapse .language-btn {
-    border-color: white;
-    color: white !important;
-} */
-/*
-.top-nav-collapse .language-selector > a {
-    color: white !important;
-}*/
 
 @media (min-width: 768px) {
   .slider .col-md-8 {
@@ -1040,13 +997,3 @@ footer .social-icon {
   }
 }
 
-/* Brute Force methods of color: */
-.custom-navbar.top-nav-collapse .force-white,
-.custom-navbar.top-nav-collapse .force-white:hover,
-.custom-navbar.top-nav-collapse .force-white:focus {
-    color: white !important;
-}
-
-.custom-navbar.top-nav-collapse .dropdown-menu li a {
-    color: white !important;
-}
