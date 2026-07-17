@@ -53,9 +53,9 @@
               <div class="collapse navbar-collapse">
                    <!-- navbar-nav-first -->
                    <ul class="nav navbar-nav navbar-first">
-                        <li><a href="#about" class="smoothScroll">About</a></li>
-                        <li><a href="#team" class="smoothScroll">Meet our chefs</a></li>
-                        <li><a href="#menu" class="smoothScroll">Our Menus</a></li>
+                        <li><a href="#about" id="nav-about" class="smoothScroll">About</a></li>
+                        <li><a href="#team" id="nav-team" class="smoothScroll">Meet our chefs</a></li>
+                        <li><a href="#menu" id="nav-menu" class="smoothScroll">Our Menus</a></li>
                         <!-- <li><a href="#contact" class="smoothScroll">Contact</a></li> -->
                    </ul>
 
@@ -67,8 +67,8 @@
                             </a>
                         
                             <ul class="dropdown-menu">
-                                <li><a href="index-fr.html" class="force-white force-white-dropdown">🇫🇷 Français</a></li>
-                                <li><a href="index.html" class="force-white force-white-dropdown">🇬🇧 English</a></li>
+                                <li><button onclick="setLang('fr')" class="force-white force-white-dropdown active" data-lang="fr" aria-label="Français">🇫🇷 Français</button></li>
+                                <li><button onclick="setLang('en')" class="force-white force-white-dropdown" data-lang="en" aria-label="English">🇬🇧 English</button></li>
                             </ul>
                         </li>                   
                    </ul>
@@ -548,6 +548,7 @@
     <script src="src/js/jquery.magnific-popup.min.js"></script>
     <script src="src/js/smoothscroll.js"></script>
     <script src="src/js/custom.js"></script>
+    <script src="src/js/script.js"></script>
 
 </body>
 </html>
