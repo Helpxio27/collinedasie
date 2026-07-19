@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
+@font-face {
+  font-family: 'norwester';
+  src: url('../fonts/norwester.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'times-new-romanMT';
+  src: url('../fonts/Times\ New\ Roman\ MT\ Std\ Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background: #070707;
   color: #e5e5e5;
