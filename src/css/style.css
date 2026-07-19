@@ -464,14 +464,14 @@ section {
   z-index: 0;
 }
 
-.slider .item::before {
+/* .slider .item::before {
   content: '';
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.35);
   pointer-events: none;
   z-index: 1;
-}
+} */
 
 .slider .item-first {
   background-image: url(../images/slider-image1.jpg);
