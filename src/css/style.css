@@ -664,6 +664,10 @@ section {
   width: 100%;
 }
 
+img.header {
+    width: 100vw;
+}
+
 #menu .col-md-4 {
   margin: 0;
   padding: 0;
