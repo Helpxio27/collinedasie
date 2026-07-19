@@ -474,7 +474,7 @@ section {
 } */
 
 .slider .item-first {
-  background-image: url(../images/slider-image1.jpg);
+  background-image: url(../images/slider-image1.png);
 }
 
 .slider .item-second {
@@ -482,7 +482,7 @@ section {
 }
 
 .slider .item-third {
-  background-image: url(../images/slider-image3.jpg);
+  background-image: url(../images/slider-image3.png);
 }
 
 .slider .item-second .section-btn {
