@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-  color: #ffffff;
+  /* color: #ffffff; */
   font-size: 2.2em;
   padding-bottom: 10px;
 }
@@ -52,7 +52,7 @@ h3 a {
 }
 
 p {
-  color: #cccccc;
+  /* color: #cccccc; */
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
@@ -568,6 +568,7 @@ section {
 #about {
   padding-bottom: 0;
   background: #FFD048;
+  color: #000;
 }
 
 
@@ -611,10 +612,6 @@ section {
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
-}
-
-.about-us * {
-    color: #000;
 }
 
 .about-us h2 {
@@ -1210,7 +1207,7 @@ footer .social-icon {
   }
 
   .about-us {
-    padding: 12px 14px 12px 36px;
+    padding: 12px 36px 12px 36px;
     margin-bottom: 1.25em;
     border-radius: 6px;
   }
