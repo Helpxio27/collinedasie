@@ -571,6 +571,63 @@ section {
   color: #000;
 }
 
+.about-section-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.about-section-layout > div {
+  float: none;
+}
+
+.about-decor-col {
+  flex: 0 0 16.6667%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.about-main-col {
+  flex: 0 0 66.6667%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about-decor-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.about-decor-stack span {
+  display: block;
+  width: 6px;
+  height: 90px;
+  background: #bfa250;
+  border-radius: 4px;
+}
+
+.about-middle-row {
+  margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+  .about-section-layout {
+    display: block;
+  }
+
+  .about-decor-col {
+    display: none;
+  }
+
+  .about-main-col {
+    width: 100%;
+  }
+}
 
 .about-us {
     position: relative;
@@ -640,7 +697,53 @@ section {
   position: relative;
 }
 
+.about-section-layout {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+}
 
+.about-main-col {
+    flex: 1;
+}
+
+.about-decor-col {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-deco-line {
+    position: relative;
+    width: 2px;
+    background: #c9a15c; /* Gold */
+    margin: 20px 0;
+    flex: 1;
+}
+
+/* Top circle */
+.about-deco-line::before,
+.about-deco-line::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border: 2px solid #c9a15c;
+    border-radius: 50%;
+    background: #fff; /* Match your background */
+}
+
+/* Top */
+.about-deco-line::before {
+    top: -7px;
+}
+
+/* Bottom */
+.about-deco-line::after {
+    bottom: -7px;
+}
 
 /*---------------------------------------
     TEAM              
