@@ -1055,7 +1055,10 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.08);
   padding: 120px 0;
   padding-bottom: 80px;
-  background: #050505;
+  background:
+    linear-gradient(135deg, rgba(17, 17, 17, 0.98) 0%, rgba(6, 6, 6, 0.97) 100%),
+    url('../images/footer-open-hour-bg.jpg') center center no-repeat;
+  background-size: cover;
 }
 
 footer .section-title {
@@ -1064,12 +1067,14 @@ footer .section-title {
 
 footer h2 {
   font-size: 20px;
-  color: #ffffff;
+  color: #f5d47a;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 footer a,
 footer p {
-  color: #c6c6c6;
+  color: #e8e1d8;
 }
 
 footer strong {
@@ -1077,51 +1082,64 @@ footer strong {
 }
 
 footer address p {
-  margin-bottom: 0;
+  margin-bottom: 6px;
 }
 
-.footer-info,
-footer .social-icon {
-  margin-top: 20px;
+.footer-grid {
+  align-items: stretch;
 }
 
-.footer-open-hour {
-  background: #111111;
-  background: linear-gradient(180deg, rgba(10,10,10,0.92) 0%, rgba(24,24,24,0.92) 100%), url('../images/footer-open-hour-bg.jpg') center center no-repeat;
-  background-size: cover;
+.footer-card {
+  background: linear-gradient(145deg, rgba(31, 22, 18, 0.95) 0%, rgba(18, 14, 12, 0.95) 100%);
+  border: 1px solid rgba(245, 212, 122, 0.2);
   border-radius: 20px;
-  margin-top: 0;
-  padding: 40px 0 40px 50px;
-  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  padding: 30px 28px;
   position: relative;
-  z-index: 22;
-  right: 0;
-  bottom: 0;
+  overflow: hidden;
 }
 
-.footer-open-hour::after {
-  background: rgba(29,29,29,0.85);
+.footer-card::before {
+  background: linear-gradient(90deg, rgba(206, 50, 50, 0.85) 0%, rgba(245, 212, 122, 0.25) 100%);
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  z-index: -2222;
+  height: 3px;
 }
 
-.footer-open-hour h2 {
+.footer-contact-card {
+  background: linear-gradient(145deg, rgba(63, 24, 24, 0.96) 0%, rgba(28, 15, 15, 0.96) 100%);
+}
+
+.footer-contact {
+  margin-top: 10px;
+}
+
+.footer-contact a {
+  color: #f5d47a;
+  font-weight: 600;
+}
+
+.footer-contact a:hover {
   color: #ffffff;
 }
 
-.footer-open-hour p {
-  color: #d9d9d9;
+.copyright-text {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(245, 212, 122, 0.18);
 }
 
-.footer-open-hour strong {
-  color: #f9f9f9;
+.copyright-text p {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+.footer-card .social-icon {
+  margin-top: 18px;
 }
 
 
