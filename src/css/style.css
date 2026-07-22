@@ -948,8 +948,37 @@ img.header {
 -----------------------------------------*/
 
 #testimonial {
-  background: url('../images/testimonial-bg.jpg') center center no-repeat;
+  background: url('../images/testing_file.jpg') center center no-repeat;
   background-size: cover;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#testimonial .owl-carousel {
+  position: relative;
+  padding: 24px 18px;
+  border-top: 2px solid rgba(239, 198, 83, 0.85);
+  border-bottom: 2px solid rgba(239, 198, 83, 0.85);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+#testimonial .owl-carousel::before,
+#testimonial .owl-carousel::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(239, 198, 83, 0.95), transparent);
+}
+
+#testimonial .owl-carousel::before {
+  top: 6px;
+}
+
+#testimonial .owl-carousel::after {
+  bottom: 6px;
 }
 
 #testimonial .owl-dots {
@@ -974,8 +1003,41 @@ img.header {
 
 #testimonial p,
 .tst-author h4,
-.tst-author span {
-  display: inline;
+.tst-author .tst-link {
+  display: block;
+}
+
+#testimonial .testimonial-card {
+  position: relative;
+  padding: 30px 35px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.05));
+  border: 1px solid rgba(239, 198, 83, 0.45);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22), inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(4px);
+}
+
+#testimonial .testimonial-card::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(239, 198, 83, 0.35);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+#testimonial .testimonial-quote {
+  display: block;
+  margin-bottom: 12px;
+  color: #f1d7a7;
+  font-size: 24px;
+}
+
+#testimonial .tst-stars {
+  margin-bottom: 10px;
+  color: #f1d7a7;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 
 #testimonial p {
@@ -986,6 +1048,26 @@ img.header {
 
 .tst-author {
   margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.tst-author h4 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.tst-author .tst-link {
+  color: #f1d7a7;
+  font-size: 13px;
+  opacity: 0.95;
+  text-decoration: none;
+}
+
+.tst-author .tst-link:hover {
+  color: #ffe6a6;
+  text-decoration: underline;
 }
 
 .tst-author h4,
@@ -996,8 +1078,6 @@ img.header {
 .tst-author span {
   margin-left: 5px;
 }
-
-
 
 /*---------------------------------------
     CONTACT             
@@ -1056,8 +1136,13 @@ img.header {
 footer {
   border-top: 1px solid rgba(255,255,255,0.08);
   padding: 0px 0 !important;
-  padding-bottom: 80px;
-  background: #e4c05b;
+  padding-bottom: 60px !important;
+  background: #ffd763;
+}
+
+.custompadd {
+  padding-top: 150px !important;
+  background : #000000 !important;
 }
 
 footer .section-title {
@@ -1255,6 +1340,7 @@ footer address p {
 
   #testimonial {
     background-position: 50% 0 !important;
+    padding-bottom: 150px;
   }
 
   #google-map,
