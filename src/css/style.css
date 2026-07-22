@@ -228,6 +228,8 @@ section {
   color: #ffffff;
   font-size: 26px;
   font-weight: 800;
+  font-family: 'Norwester', 'Arial Black', Impact, sans-serif;
+  letter-spacing: 0.08em;
   transition: color 0.35s ease;
 }
 
@@ -1055,10 +1057,7 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.08);
   padding: 120px 0;
   padding-bottom: 80px;
-  background:
-    linear-gradient(135deg, rgba(17, 17, 17, 0.98) 0%, rgba(6, 6, 6, 0.97) 100%),
-    url('../images/footer-open-hour-bg.jpg') center center no-repeat;
-  background-size: cover;
+  background: #e4c05b;
 }
 
 footer .section-title {
@@ -1125,6 +1124,33 @@ footer address p {
 
 .footer-contact a:hover {
   color: #ffffff;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #f5d47a;
+}
+
+.footer-links i {
+  width: 16px;
+  text-align: center;
 }
 
 .copyright-text {
