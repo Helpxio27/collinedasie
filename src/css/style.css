@@ -746,8 +746,19 @@ section {
 }
 
 /*---------------------------------------
-    TEAM              
+    LOCATION + WHERE ARE WE          
 -----------------------------------------*/
+
+#location {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background : #000000 !important;
+}
+
+#location .container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 #team {
   background: #090909;
