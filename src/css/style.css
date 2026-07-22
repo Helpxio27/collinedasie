@@ -752,8 +752,8 @@ section {
 -----------------------------------------*/
 
 #location {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-top: 0px !important;
+    padding-bottom: 140px !important;
     background : #000000 !important;
 }
 
@@ -1055,7 +1055,7 @@ img.header {
 
 footer {
   border-top: 1px solid rgba(255,255,255,0.08);
-  padding: 120px 0;
+  padding: 0px 0 !important;
   padding-bottom: 80px;
   background: #e4c05b;
 }
@@ -1100,7 +1100,7 @@ footer address p {
 }
 
 .footer-card::before {
-  background: linear-gradient(90deg, rgba(206, 50, 50, 0.85) 0%, rgba(245, 212, 122, 0.25) 100%);
+  background: #c68c1f;
   content: "";
   position: absolute;
   top: 0;
