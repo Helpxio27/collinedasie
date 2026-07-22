@@ -615,6 +615,31 @@ section {
   margin-top: 30px;
 }
 
+.socialBtns{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+}
+
+.socialBtns .our-menu{
+    background: #FF7676;
+    font-family: 'norwester', sans-serif;
+    padding: 8px 16px;
+    font-size: 1.25em;
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+/* .socialBtns .instagram{
+    background: url('../images/instagram.png');
+    background-size: 100% 100%;
+    border:none;
+} */
+
 @media (max-width: 991px) {
   .about-section-layout {
     display: block;
