@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
+<!-- id is the text_id for the translation and overriding -->
+
 <body>
     <!-- PRE LOADER -->
     <section class="preloader">
@@ -59,10 +61,11 @@
                    </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Call Now! (+33) 01 46 06 92 45</a></li>
+                        <li><a href="#" id="nav-CallNow">Call Now! (+33) 01 46 06 92 45</a></li>
                         <li class="dropdown language-selector">
-                            <a href="#" class="dropdown-toggle language-btn" data-toggle="dropdown">
-                                🌐 Language <span class="caret"></span>
+                            <a href="#" id="nav-language" class="dropdown-toggle language-btn" data-toggle="dropdown">
+                                🌐 Language 
+                                <span class="caret"></span>
                             </a>
                         
                             <ul class="dropdown-menu">
@@ -87,9 +90,9 @@
                              <div class="caption">
                                   <div class="container">
                                        <div class="col-md-8 col-sm-12">
-                                            <h3>Fine Asian Dining</h3>
-                                            <h1>Authentic flavors in a warm, modern setting</h1>
-                                            <a href="#menu" class="section-btn btn btn-default smoothScroll">Explore our menu</a>
+                                            <h3 id="hero-title1">Fine Asian Dining</h3>
+                                            <h1 id="hero-description1">Authentic flavors in a warm, modern setting</h1>
+                                            <a href="#menu" id="hero-button1" class="section-btn btn btn-default smoothScroll">Explore our menu</a>
                                        </div>
                                   </div>
                              </div>
@@ -99,9 +102,9 @@
                              <div class="caption">
                                   <div class="container">
                                        <div class="col-md-8 col-sm-12">
-                                            <h3>Your Perfect Breakfast</h3>
-                                            <h1>The best dinning quality can be here too!</h1>
-                                            <a href="#menu" class="section-btn btn btn-default smoothScroll">Discover menu</a>
+                                            <h3 id="hero-title2">Your Perfect Breakfast</h3>
+                                            <h1 id="hero-description2">The best dinning quality can be here too!</h1>
+                                            <a href="#menu" id="hero-button2" class="section-btn btn btn-default smoothScroll">Discover menu</a>
                                        </div>
                                   </div>
                              </div>
@@ -111,9 +114,9 @@
                              <div class="caption">
                                   <div class="container">
                                        <div class="col-md-8 col-sm-12">
-                                            <h3>New Restaurant in Town</h3>
-                                            <h1>Enjoy our special menus every Sunday and Friday</h1>
-                                            <a href="#contact" class="section-btn btn btn-default smoothScroll">Reservation</a>
+                                            <h3 id="hero-title3">New Restaurant in Town</h3>
+                                            <h1 id="hero-description2">Enjoy our special menus every Sunday and Friday</h1>
+                                            <a href="#contact" id="hero-button3" class="section-btn btn btn-default smoothScroll">Reservation</a>
                                        </div>
                                   </div>
                              </div>
@@ -134,8 +137,8 @@
 
                 <div class="about-main-col">
                     <div class="about-us">
-                        <h2><i class="fa fa-asterisk"></i> ABOUT US</h2>
-                        <p>
+                        <h2 id="about-title"><i class="fa fa-asterisk"></i> ABOUT US</h2>
+                        <p id="about-description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra, metus id sagittis convallis, sem purus euismod odio, nec iaculis arcu nisl vel quam. Etiam ultrices lectus magna, sit amet varius turpis fermentum eu. Etiam ullamcorper nec libero sit amet cursus. Mauris nec commodo libero, eget sodales nisi. 
                             Morbi dignissim libero ut velit imperdiet posuere. Morbi fringilla gravida lorem, a iaculis est convallis vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur scelerisque, felis sed laoreet tempor, ex lorem eleifend lorem, eget pulvinar nisi leo in est.
                         </p>
@@ -146,14 +149,14 @@
                                 <div class="wow fadeInUp" data-wow-delay="0.2s">
                                     <h2>DEL SARTE</h2>
                                     <p>21 Rue André del Sarte, 75018 Paris</p>
-                                    <p>(+33) 0155791682</p>
+                                    <p>(+33)01 55 79 16 82</p>
                                 </div>
                                 <div class="wow fadeInUp" data-wow-delay="0.4s">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum accumsan orci at varius.</p>
+                                    <p id="about-description-delsarte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum accumsan orci at varius.</p>
                                     <img src="src/images/restaurant1.jpg" loading="lazy" class="img-responsive" alt="" srcset="">
                                 </div>
                                 <div class="wow fadeInUp socialBtns" data-wow-delay="0.8s">
-                                    <button class="our-menu">Menu En Ligne</button>
+                                    <button class="our-menu" id="about-button-menu">Menu En Ligne</button>
                                     <img src="src/images/instagram.png" loading="lazy" style="padding:0;" class="btn instagram" width="48" height="48">
                                     <img src="src/images/facebook.png" loading="lazy" style="padding:0;" class="btn facebook" width="48" height="48">
                                     <img src="src/images/google-maps.png" loading="lazy" style="padding:0;" class="btn gmap" width="48" height="48">
@@ -165,14 +168,14 @@
                                 <div class="wow fadeInUp" data-wow-delay="0.4s">
                                     <h2>CLIGNANCOURT</h2>
                                     <p>18 Rue de Clignancourt, 75018 Paris</p>
-                                    <p>(+33) 0155791682</p>
+                                    <p>(+33)01 55 79 16 82</p>
                                 </div>
                                 <div class="wow fadeInUp" data-wow-delay="0.6s">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum accumsan orci at varius.</p>
+                                    <p id="about-description-clignancourt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum accumsan orci at varius.</p>
                                     <img src="src/images/restaurant2.jpg" loading="lazy" class="img-responsive" alt="" srcset="">
                                 </div>
                                 <div class="wow fadeInUp socialBtns" data-wow-delay="1s">
-                                    <button class="our-menu">Menu En Ligne</button>
+                                    <button class="our-menu" id="about-button-menu">Menu En Ligne</button>
                                     <img src="src/images/instagram.png" loading="lazy" style="padding:0;" class="btn instagram" width="48" height="48">
                                     <img src="src/images/facebook.png" loading="lazy" style="padding:0;" class="btn facebook" width="48" height="48">
                                     <img src="src/images/google-maps.png" loading="lazy" style="padding:0;" class="btn gmap" width="48" height="48">

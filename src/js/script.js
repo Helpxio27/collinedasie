@@ -7,15 +7,29 @@ class Page {
     translations = {
         fr: {
             name: "collinedasie",
-            "nav-about": "A propos",
+            "nav-about": "A propos", 
             "nav-team":"Notre équipe",
-            "nav-menu":"Nos menus"
+            "nav-menu":"Nos menus",
+            "nav-CallNow":"Appellez Ici! (+33) 01 46 06 92 45",
+            "nav-language":"Langage"
         },
         en: {
             name: "collinedasie",
             "nav-about": "About",
             "nav-team":"Meet our chefs",
-            "nav-menu":"Our menus"
+            "nav-menu":"Our menus",
+            "nav-CallNow":"Call Now! (+33) 01 46 06 92 45",
+            "nav-language":"Language"
+            // hero carousel 
+            "hero-title1":
+            "hero-description1":
+            "hero-button1":
+            "hero-title2":
+            "hero-description2":
+            "hero-button2":
+            "hero-title3":
+            "hero-description3":
+            "hero-button3":
         }
     };
 
