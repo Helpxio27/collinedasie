@@ -7,6 +7,7 @@ class Page {
     translations = {
         fr: {
             name: "collinedasie",
+            "restaurant-name":"Colline D'Asie",
             "nav-about": "A propos", 
             "nav-team":"Notre équipe",
             "nav-menu":"Nos menus",
@@ -15,21 +16,45 @@ class Page {
         },
         en: {
             name: "collinedasie",
+            "restaurant-name":"Colline D'Asie",
             "nav-about": "About",
             "nav-team":"Meet our chefs",
             "nav-menu":"Our menus",
             "nav-CallNow":"Call Now! (+33) 01 46 06 92 45",
-            "nav-language":"Language"
+            "nav-language":"Language",
             // hero carousel 
-            "hero-title1":
-            "hero-description1":
-            "hero-button1":
-            "hero-title2":
-            "hero-description2":
-            "hero-button2":
-            "hero-title3":
-            "hero-description3":
-            "hero-button3":
+            "hero-title1":"placeholder",
+            "hero-description1":"placeholder",
+            "hero-button1":"placeholder",
+            "hero-title2":"placeholder",
+            "hero-description2":"placeholder",
+            "hero-button2":"placeholder",
+            "hero-title3":"placeholder",
+            "hero-description3":"placeholder",
+            "hero-button3":"placeholder",
+            // about
+            "about-title":" ABOUT US",
+            "about-description":"placeholder",
+            "about-description-delsarte":"placeholder",
+            "about-description-clignancourt":"placeholder",
+            "about-button-menu":"Explore Our Menu", // in french:menu en ligne
+            // map
+            "map-title":" Where are we?",
+            "map-description":"Visit us at one of our two Colline D'Asie restaurants in Paris.",
+            // review 
+            "review-title":"Testimonials",
+            "review-description1":"“J’adore cette adresse ! Peu fréquentée par les touristes, elle permet d’un peu souffler quand on habite à Montmartre en période estivale. Le service est parfait, la nourriture est délicieuse, et l’ambiance est vraiment agréable.”",
+            "review-description2":"",
+            "review-description3":"",
+            "review-description4":"",
+            "review-description5":"",
+            "review-description6":"",
+            // footer
+            "footer-googlemaps":" Open in Google Maps",
+            "footer-orderonline":" Order online",
+            // contact last footer
+            "contact-title":"Contact",
+            "contact-description":"Call us for dining, private events, or takeaway enquiries" 
         }
     };
 
