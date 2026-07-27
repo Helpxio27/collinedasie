@@ -11,7 +11,7 @@ class Page {
             "nav-about": "À propos", 
             "nav-team":"Nous trouver",
             "nav-menu":"Infos & Contact",
-            "nav-CallNow":"Appelez-nous ! (+33) 01 46 06 92 45",
+            "nav-CallNow":" Changer de Langue: ",
             "nav-language":"Langue",
             "hero-title1":"Restaurant asiatique raffiné",
             "hero-description1":"Des saveurs authentiques dans un cadre moderne et chaleureux",
@@ -47,7 +47,7 @@ class Page {
             "nav-about": "About", 
             "nav-team":"Find Us",
             "nav-menu":"Infos & Contact",
-            "nav-CallNow":"Call Now! (+33) 01 46 06 92 45",
+            "nav-CallNow":" Change Languages: ",
             "nav-language":"Language",
             "hero-title1":"Fine Asian Dining",
             "hero-description1":"Authentic flavors in a warm, modern setting",
@@ -114,24 +114,24 @@ class Page {
         localStorage.setItem('language', lang);
     }
 
-    setLang(lang) {
-        this.currentLang = lang;
-        
-        for (const key in this.translations[lang]) {
-            const element = document.getElementById(key);
-            if (element) {
-                element.textContent = this.translations[lang][key];
-            }
-        }
-        
-        document.querySelectorAll('.lang-btn').forEach(btn => {
-            btn.classList.toggle('active', btn.dataset.lang === lang);
-        });
-        
-        document.documentElement.lang = lang;
-        
-        localStorage.setItem('language', lang);
-    }
+    //setLang(lang) {
+    //    this.currentLang = lang;
+    //    
+    //    for (const key in this.translations[lang]) {
+    //        const element = document.getElementById(key);
+    //        if (element) {
+    //            element.textContent = this.translations[lang][key];
+    //        }
+    //    }
+    //    
+    //    document.querySelectorAll('.lang-btn').forEach(btn => {
+    //        btn.classList.toggle('active', btn.dataset.lang === lang);
+    //    });
+    //    
+    //    document.documentElement.lang = lang;
+    //    
+    //    localStorage.setItem('language', lang);
+    //}
 
     // setupScrollAnimations() {
     //     const observer = new IntersectionObserver((entries) => {
