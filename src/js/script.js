@@ -8,53 +8,74 @@ class Page {
         fr: {
             name: "collinedasie",
             "restaurant-name":"Colline D'Asie",
-            "nav-about": "A propos", 
-            "nav-team":"Notre équipe",
-            "nav-menu":"Nos menus",
-            "nav-CallNow":"Appellez Ici! (+33) 01 46 06 92 45",
-            "nav-language":"Langage"
+            "nav-about": "À propos", 
+            "nav-team":"Nous trouver",
+            "nav-menu":"Infos & Contact",
+            "nav-CallNow":"Appelez-nous ! (+33) 01 46 06 92 45",
+            "nav-language":"Langue",
+            "hero-title1":"Restaurant asiatique raffiné",
+            "hero-description1":"Des saveurs authentiques dans un cadre moderne et chaleureux",
+            "hero-button1":"Découvrir le menu",
+            "hero-title2":"Votre petit-déjeuner parfait",
+            "hero-description2":"La meilleure qualité culinaire est aussi ici !",
+            "hero-button2":"Voir le menu",
+            "hero-title3":"Nouveau restaurant en ville",
+            "hero-description3":"Profitez de nos menus spéciaux chaque dimanche et vendredi",
+            "hero-button3":"Réservation",
+            "about-title":"A PROPOS",
+            "about-description":"Colline d’Asie est une maison familiale parisienne qui célèbre la cuisine vietnamienne et cambodgienne à travers des recettes authentiques transmises au fil des générations. Depuis ses débuts, l’enseigne partage une cuisine généreuse, faite maison et inspirée des traditions du Sud-Est asiatique, entre grands classiques incontournables et spécialités plus confidentielles. À travers ses deux adresses situées au cœur de Montmartre, Colline d’Asie propose deux expériences différentes mais complémentaires : une adresse traditionnelle où retrouver les grands classiques de la cuisine vietnamienne et khmère, et un lieu plus moderne pensé pour une pause gourmande autour des spécialités asiatiques.",
+            "about-description-delsarte":"Situé au 21 rue André del Sarte, Colline d’Asie –   Del Sarte est l’adresse historique de la maison. Ce restaurant à table propose une cuisine vietnamienne et khmère authentique, dans une ambiance chaleureuse et conviviale. La carte met à l’honneur les grands classiques du Sud-Est asiatique comme le bo bun, le pho, le curry khmer ou encore le khor ko. Apprécié pour ses recettes familiales, ses portions généreuses et son authenticité, c’est une adresse où découvrir les saveurs traditionnelles de la maison.",
+            "about-description-clignancourt":"Située au 18 rue de Clignancourt, Colline d’Asie – Clignancourt propose une approche plus moderne de la cuisine asiatique. Dans un esprit cantine urbaine et coffee-shop, l’adresse met à l’honneur les spécialités de rue comme les banh mi, les baos, les soupes et les bobuns, accompagnées de desserts maison et de boissons originales. Plus décontractée et contemporaine, cette adresse permet de retrouver l’univers familial de Colline d’Asie dans un format différent, adapté aux pauses gourmandes du quotidien.",
+            "about-button-menu":"Menu en ligne",
+            "map-title":"OÙ SOMMES-NOUS",
+            "map-description":"Venez nous rendre visite dans l'un de nos deux restaurants Colline d'Asie à Paris.",
+            "review-title":"Avis clients",
+            "review-description1":"“J’adore cette adresse ! Peu fréquentée par les touristes, elle permet d’un peu souffler quand on habite à Montmartre en période estivale. Le service est parfait, la nourriture est délicieuse, et l’ambiance est vraiment agréable.”",
+            "review-description2":"“Un lieu charmant à Montmartre — une cuisine délicieuse, un service chaleureux et un excellent rapport qualité-prix.”",
+            "review-description3":"“Excellentes saveurs vietnamiennes, service rapide et ambiance détendue. Parfait pour un déjeuner ou un dîner à Paris.”",
+            "review-description4":"“Un des meilleurs repas à Paris. Frais, savoureux, et l'équipe vous accueille comme chez vous.”",
+            "review-description5":"“Des plats magnifiquement préparés, une équipe très sympathique et un cadre agréable loin de la foule de touristes.”",
+            "review-description6":"“Un trésor caché pour tous ceux qui cherchent des saveurs asiatiques authentiques à Paris. Très bon service et atmosphère agréable.”",
+            "footer-googlemaps":"Ouvrir dans Google Maps",
+            "footer-orderonline":"Commander en ligne",
+            "contact-title":"Contact",
+            "contact-description":"Contactez-nous pour en savoir plus sur nos restaurants, nos spécialités ou vos commandes à emporter."
         },
         en: {
             name: "collinedasie",
-            "restaurant-name":"Colline D'Asie",
-            "nav-about": "About",
-            "nav-team":"Meet our chefs",
-            "nav-menu":"Our menus",
+            "restaurant-name":"Colline D'Asie", 
+            "nav-about": "About", 
+            "nav-team":"Find Us",
+            "nav-menu":"Infos & Contact",
             "nav-CallNow":"Call Now! (+33) 01 46 06 92 45",
             "nav-language":"Language",
-            // hero carousel 
-            "hero-title1":"placeholder",
-            "hero-description1":"placeholder",
-            "hero-button1":"placeholder",
-            "hero-title2":"placeholder",
-            "hero-description2":"placeholder",
-            "hero-button2":"placeholder",
-            "hero-title3":"placeholder",
-            "hero-description3":"placeholder",
-            "hero-button3":"placeholder",
-            // about
-            "about-title":" ABOUT US",
-            "about-description":"placeholder",
-            "about-description-delsarte":"placeholder",
-            "about-description-clignancourt":"placeholder",
-            "about-button-menu":"Explore Our Menu", // in french:menu en ligne
-            // map
-            "map-title":" Where are we?",
-            "map-description":"Visit us at one of our two Colline D'Asie restaurants in Paris.",
-            // review 
+            "hero-title1":"Fine Asian Dining",
+            "hero-description1":"Authentic flavors in a warm, modern setting",
+            "hero-button1":"Explore our menu",
+            "hero-title2":"Your Perfect Breakfast",
+            "hero-description2":"The best culinary quality is here too!",
+            "hero-button2":"Discover menu",
+            "hero-title3":"New Restaurant in Town",
+            "hero-description3":"Enjoy our special menus every Sunday and Friday",
+            "hero-button3":"Reservation",
+            "about-title":"ABOUT US",
+            "about-description":"Colline D'Asie is a Parisian family restaurant celebrating Vietnamese and Cambodian cuisine through authentic recipes passed down through generations. Since its beginnings, the brand has shared generous homemade dishes inspired by Southeast Asian traditions, blending classic favorites with lesser-known specialties. With its two Montmartre locations, Colline D'Asie offers two complementary experiences: a traditional dining room for Vietnamese and Khmer classics, and a more modern spot designed for a quick gourmet break with Asian specialties.",
+            "about-description-delsarte":"Located at 21 rue André del Sarte, Colline D'Asie – Del Sarte is the house’s historic address. This sit-down restaurant serves authentic Vietnamese and Khmer cuisine in a warm, welcoming atmosphere. The menu highlights Southeast Asian classics like bo bun, pho, Khmer curry, and khor ko. Known for its family recipes, generous portions, and authenticity, it is a place to discover the traditional flavors of the house.",
+            "about-description-clignancourt":"Situated at 18 rue de Clignancourt, Colline D'Asie – Clignancourt offers a more modern take on Asian cuisine. In an urban canteen and coffee-shop atmosphere, the restaurant showcases street food favorites like banh mi, baos, soups, and bobuns, accompanied by homemade desserts and original drinks. More relaxed and contemporary, this location brings the family spirit of Colline D'Asie to a different format, perfect for everyday gourmet breaks.",
+            "about-button-menu":"Explore Our Menu",
+            "map-title":"WHERE ARE WE",
+            "map-description":"Visit us at one of our two Colline D'Asie restaurants in Paris.", 
             "review-title":"Testimonials",
-            "review-description1":"“J’adore cette adresse ! Peu fréquentée par les touristes, elle permet d’un peu souffler quand on habite à Montmartre en période estivale. Le service est parfait, la nourriture est délicieuse, et l’ambiance est vraiment agréable.”",
-            "review-description2":"",
-            "review-description3":"",
-            "review-description4":"",
-            "review-description5":"",
-            "review-description6":"",
-            // footer
-            "footer-googlemaps":" Open in Google Maps",
-            "footer-orderonline":" Order online",
-            // contact last footer
+            "review-description1":"“I love this place! It is less crowded by tourists, which makes it a great spot to relax when staying in Montmartre during summer. The service is perfect, the food is delicious, and the atmosphere is very pleasant.”",
+            "review-description2":"“A truly lovely spot in Montmartre — delicious food, warm service, and very good value for money.”",
+            "review-description3":"“Excellent Vietnamese flavors, fast service, and a relaxed atmosphere. Perfect for a casual lunch or dinner in Paris.”",
+            "review-description4":"“One of the best-value meals I’ve had in Paris. Fresh, flavorful, and the staff makes you feel genuinely welcome.”",
+            "review-description5":"“Beautifully prepared dishes, a very friendly team, and a comfortable place to enjoy a relaxed meal away from the tourist crowds.”",
+            "review-description6":"“A hidden gem for anyone looking for authentic Asian flavors in Paris. Great food, great service, and a very pleasant atmosphere.”",
+            "footer-googlemaps":"Open in Google Maps", 
+            "footer-orderonline":"Order online", 
             "contact-title":"Contact",
-            "contact-description":"Call us for dining, private events, or takeaway enquiries" 
+            "contact-description":"Contact us to learn more about our restaurants, specialties, or take-away orders."
         }
     };
 
@@ -68,6 +89,29 @@ class Page {
 
     setupLanguage() {
         this.setLang(this.currentLang);
+    }
+
+    setLang(lang) {
+        this.currentLang = lang;
+        
+        for (const key in this.translations[lang]) {
+            const elementById = document.getElementById(key);
+            if (elementById) {
+                elementById.textContent = this.translations[lang][key];
+            }
+
+            document.querySelectorAll(`[data-translate="${key}"]`).forEach(el => {
+                el.textContent = this.translations[lang][key];
+            });
+        }
+        
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+        
+        document.documentElement.lang = lang;
+        
+        localStorage.setItem('language', lang);
     }
 
     setLang(lang) {

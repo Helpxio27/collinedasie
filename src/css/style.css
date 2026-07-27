@@ -313,12 +313,18 @@ section {
   background-color: transparent;
 }
 
+.custom-navbar .navbar-toggle {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+}
+
 .custom-navbar .navbar-toggle .icon-bar {
   background: #ffffff;
   border-color: transparent;
+  height: 2px;
 }
 
-@media(min-width:768px) {
+@media(min-width:767px) {
   .custom-navbar {
     border-bottom: 0;
     background: rgba(7, 7, 7, 0);
@@ -344,6 +350,70 @@ section {
   .top-nav-collapse .nav .section-btn a {
     color: #f3c623;
   }
+} 
+
+/* Add this at the end of your CSS */
+@media(max-width:767px) {
+  * {
+      box-sizing: border-box;
+  }
+}
+@media(max-width:767px) {
+  html {
+      overflow-x: hidden;
+      max-width: 100%;
+  }
+}
+@media(max-width:767px) {
+    body {
+        overflow-x: hidden;
+        max-width: 100%;
+        position: relative;
+    }
+}
+
+@media(max-width:767px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    
+    .navbar-collapse {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        overflow-x: hidden !important;
+        margin: 0 !important;
+    }
+    
+    .navbar-header {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    .navbar-nav {
+        margin: 0 !important;
+    }
+    
+    .navbar-nav > li > a {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
+@media(max-width:767px) {
+    .about-decor-col {
+        display: none !important;
+    }
 }
 
 /*---------------------------------------
@@ -639,6 +709,12 @@ section {
     border:none;
 } */
 
+#about-description-delsarte {
+    padding-bottom: 10px;
+}
+#about-description-clignancourt {
+    padding-bottom: 10px;
+}
 @media (max-width: 991px) {
   .about-section-layout {
     display: block;
@@ -711,7 +787,7 @@ section {
 
 img.img-responsive {
     border: solid #fff;
-    outline: solid #000;
+    outline: solid #000;    
 }
 
 .about-info {
@@ -1413,7 +1489,7 @@ footer address p {
   }
 
   .custom-navbar {
-    background: #ffffff;
+    background: #000000;
     -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -1421,20 +1497,34 @@ footer address p {
     text-align: center;
   }
 
+  .custom-navbar .navbar-collapse {
+    background: #000000;
+  }
+
+  .custom-navbar .navbar-toggle {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: transparent;
+  }
+
+  .custom-navbar .navbar-toggle .icon-bar {
+    background: #ffffff;
+  }
+
   .custom-navbar .nav li a {
     line-height: normal;
     padding: 10px;
+    color: #ffffff;
   }
 
   .custom-navbar .navbar-brand,
   .top-nav-collapse .navbar-brand {
-    color: #252525;
+    color: #ffffff;
     font-weight: 600;
   }
 
   .custom-navbar .nav li a,
   .top-nav-collapse .nav li a {
-    color: #575757;
+    color: #ffffff;
   }
 
   .custom-navbar .navbar-nav.navbar-right li {
