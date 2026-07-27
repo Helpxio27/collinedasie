@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <!-- Website Name display on tab -->
     <title>Colline D'asie</title>
@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
+<!-- id is the text_id for the translation and overriding -->
+
 <body>
     <!-- PRE LOADER -->
     <section class="preloader">
@@ -36,10 +38,11 @@
          <div class="container">
 
               <div class="navbar-header">
-                   <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon icon-bar"></span>
-                        <span class="icon icon-bar"></span>
-                        <span class="icon icon-bar"></span>
+                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                    </button>
 
                    <!-- lOGO TEXT HERE -->
@@ -52,22 +55,23 @@
               <div class="collapse navbar-collapse">
                    <!-- navbar-nav-first -->
                    <ul class="nav navbar-nav navbar-first">
-                        <li><a href="#about" id="nav-about" class="smoothScroll">About</a></li>
-                        <li><a href="#team" id="nav-team" class="smoothScroll">Meet our chefs</a></li>
-                        <li><a href="#menu" id="nav-menu" class="smoothScroll">Our Menus</a></li>
+                        <li><a href="#about" id="nav-about" class="smoothScroll">À propos</a></li>
+                        <li><a href="#location" id="nav-team" class="smoothScroll">Ou somme nous?</a></li>
+                        <li><a href="#footer" id="nav-menu" class="smoothScroll">Contact</a></li>
                         <!-- <li><a href="#contact" class="smoothScroll">Contact</a></li> -->
                    </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Call Now! (+33) 01 46 06 92 45</a></li>
+                        <li><a href="#" id="nav-CallNow">Appelez-nous ! (+33) 01 46 06 92 45</a></li>
                         <li class="dropdown language-selector">
-                            <a href="#" class="dropdown-toggle language-btn" data-toggle="dropdown">
-                                🌐 Language <span class="caret"></span>
+                            <a href="#" id="nav-language" class="dropdown-toggle language-btn" data-toggle="dropdown">
+                                🌐 Langue 
+                                <span class="caret"></span>
                             </a>
                         
                             <ul class="dropdown-menu">
-                                <li><button onclick="setLang('fr')" class="force-white force-white-dropdown active" data-lang="fr" aria-label="Français">🇫🇷 Français</button></li>
-                                <li><button onclick="setLang('en')" class="force-white force-white-dropdown" data-lang="en" aria-label="English">🇬🇧 English</button></li>
+                                <li><button onclick="setLang('fr')" class="force-white force-white-dropdown lang-btn active" data-lang="fr" aria-label="Français">🇫🇷 Français</button></li>
+                                <li><button onclick="setLang('en')" class="force-white force-white-dropdown lang-btn" data-lang="en" aria-label="English">🇬🇧 English</button></li>
                             </ul>
                         </li>                   
                    </ul>
@@ -87,9 +91,9 @@
                              <div class="caption">
                                   <div class="container">
                                        <div class="col-md-8 col-sm-12">
-                                            <h3>Fine Asian Dining</h3>
-                                            <h1>Authentic flavors in a warm, modern setting</h1>
-                                            <a href="#menu" class="section-btn btn btn-default smoothScroll">Explore our menu</a>
+                                            <h3 id="hero-title1">Restaurant asiatique raffiné</h3>
+                                            <h1 id="hero-description1">Des saveurs authentiques dans un cadre moderne et chaleureux</h1>
+                                            <a href="#about" id="hero-button1" class="section-btn btn btn-default smoothScroll">Découvrir le menu</a>
                                        </div>
                                   </div>
                              </div>
@@ -99,9 +103,9 @@
                              <div class="caption">
                                   <div class="container">
                                        <div class="col-md-8 col-sm-12">
-                                            <h3>Your Perfect Breakfast</h3>
-                                            <h1>The best dinning quality can be here too!</h1>
-                                            <a href="#menu" class="section-btn btn btn-default smoothScroll">Discover menu</a>
+                                            <h3 id="hero-title2">Votre petit-déjeuner parfait</h3>
+                                            <h1 id="hero-description2">La meilleure qualité culinaire est aussi ici !</h1>
+                                            <a href="#menu" id="hero-button2" class="section-btn btn btn-default smoothScroll">Voir le menu</a>
                                        </div>
                                   </div>
                              </div>
@@ -111,9 +115,9 @@
                              <div class="caption">
                                   <div class="container">
                                        <div class="col-md-8 col-sm-12">
-                                            <h3>New Restaurant in Town</h3>
-                                            <h1>Enjoy our special menus every Sunday and Friday</h1>
-                                            <a href="#contact" class="section-btn btn btn-default smoothScroll">Reservation</a>
+                                            <h3 id="hero-title3">Nouveau restaurant en ville</h3>
+                                            <h1 id="hero-description3">Profitez de nos menus spéciaux chaque dimanche et vendredi</h1>
+                                            <a href="#contact" id="hero-button3" class="section-btn btn btn-default smoothScroll">Réservation</a>
                                        </div>
                                   </div>
                              </div>
@@ -134,26 +138,29 @@
 
                 <div class="about-main-col">
                     <div class="about-us">
-                        <h2><i class="fa fa-asterisk"></i> ABOUT US</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra, metus id sagittis convallis, sem purus euismod odio, nec iaculis arcu nisl vel quam. Etiam ultrices lectus magna, sit amet varius turpis fermentum eu. Etiam ullamcorper nec libero sit amet cursus. Mauris nec commodo libero, eget sodales nisi. 
-                            Morbi dignissim libero ut velit imperdiet posuere. Morbi fringilla gravida lorem, a iaculis est convallis vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur scelerisque, felis sed laoreet tempor, ex lorem eleifend lorem, eget pulvinar nisi leo in est.
-                        </p>
+                        <h2>
+                            <i class="fa fa-asterisk"></i>
+                            <span id="about-title">A PROPOS</span>
+                        </h2>
+
+                         <p id="about-description">
+                              placeholder
+                         </p>
                     </div>
-                    <div class="row about-middle-row">
+                    <div class="about-subtitles row about-middle-row">
                         <div class="col-md-6 col-sm-12 firstRow">
                             <div class="about-info">
                                 <div class="wow fadeInUp" data-wow-delay="0.2s">
                                     <h2>DEL SARTE</h2>
                                     <p>21 Rue André del Sarte, 75018 Paris</p>
-                                    <p>(+33) 0155791682</p>
+                                    <p>(+33) 01 55 79 16 82</p>
                                 </div>
                                 <div class="wow fadeInUp" data-wow-delay="0.4s">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum accumsan orci at varius.</p>
+                                    <p id="about-description-delsarte">Del Sarte est l'adresse historique où la famille sert des classiques khmers et vietnamiens comme le pho, le bo bun et le curry khmer dans un cadre simple et chaleureux.</p>
                                     <img src="src/images/restaurant1.jpg" loading="lazy" class="img-responsive" alt="" srcset="">
                                 </div>
                                 <div class="wow fadeInUp socialBtns" data-wow-delay="0.8s">
-                                    <button class="our-menu">Menu En Ligne</button>
+                                    <button class="our-menu" id="about-button-menu">Menu En Ligne</button>
                                     <img src="src/images/instagram.png" loading="lazy" style="padding:0;" class="btn instagram" width="48" height="48">
                                     <img src="src/images/facebook.png" loading="lazy" style="padding:0;" class="btn facebook" width="48" height="48">
                                     <img src="src/images/google-maps.png" loading="lazy" style="padding:0;" class="btn gmap" width="48" height="48">
@@ -165,14 +172,14 @@
                                 <div class="wow fadeInUp" data-wow-delay="0.4s">
                                     <h2>CLIGNANCOURT</h2>
                                     <p>18 Rue de Clignancourt, 75018 Paris</p>
-                                    <p>(+33) 0155791682</p>
+                                    <p>(+33) 01 55 79 16 82</p>
                                 </div>
                                 <div class="wow fadeInUp" data-wow-delay="0.6s">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum accumsan orci at varius.</p>
+                                    <p id="about-description-clignancourt">Clignancourt est la version moderne du concept, un coffee-shop rapide proposant banh mi, baos, bubble tea et plats à emporter pour une clientèle urbaine.</p>
                                     <img src="src/images/restaurant2.jpg" loading="lazy" class="img-responsive" alt="" srcset="">
                                 </div>
                                 <div class="wow fadeInUp socialBtns" data-wow-delay="1s">
-                                    <button class="our-menu">Menu En Ligne</button>
+                                    <button class="our-menu" id="about-button-menu-clignancourt" data-translate="about-button-menu">Menu en ligne</button>
                                     <img src="src/images/instagram.png" loading="lazy" style="padding:0;" class="btn instagram" width="48" height="48">
                                     <img src="src/images/facebook.png" loading="lazy" style="padding:0;" class="btn facebook" width="48" height="48">
                                     <img src="src/images/google-maps.png" loading="lazy" style="padding:0;" class="btn gmap" width="48" height="48">
@@ -199,14 +206,16 @@
           <div class="container">
                <div class="row">
                     <div class="col-md-12 col-sm-12 text-center">
-                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                              <h2><i class="fa fa-asterisk"></i> Where are we?</h2>
-                              <p>
-                              Visit us at one of our two <strong>Colline d'Asie</strong> restaurants in Paris.
-                              </p>
-                         </div>
+                        <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                            <h2>
+                                <i class="fa fa-asterisk"></i>
+                                <span id="map-title">OÙ SOMMES-NOUS</span>
+                            </h2>                       
+                            <p id="map-description">
+                                Venez nous rendre visite dans l'un de nos deux restaurants Colline d'Asie à Paris.
+                            </p>
+                        </div>                    
                     </div>
-
                     <div class="col-md-12 col-sm-12">
                          <div class="embed-responsive embed-responsive-16by9">
                               <iframe src="https://www.google.com/maps/d/embed?mid=1U-oVZPlmIABHp-j8fwmhSOVuQryoJYQ&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
@@ -223,7 +232,7 @@
               <div class="row">
                    <div class="col-md-12 col-sm-12">
                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                             <h2>Testimonials</h2>
+                             <h2 id="review-title">Avis clients</h2>
                         </div>
                    </div>  
 
@@ -232,7 +241,7 @@
                              <div class="item testimonial-card">
                                   <div class="tst-stars" aria-label="5 stars">★★★★★</div>
                                   <i class="fa fa-quote-left testimonial-quote"></i>
-                                  <p>“J’adore cette adresse ! Peu fréquentée par les touristes, elle permet d’un peu souffler quand on habite à Montmartre en période estivale. Le service est parfait, la nourriture est délicieuse, et l’ambiance est vraiment agréable.”</p>
+                                  <p id="review-description1">“J’adore cette adresse ! Peu fréquentée par les touristes, elle permet d’un peu souffler quand on habite à Montmartre en période estivale. Le service est parfait, la nourriture est délicieuse, et l’ambiance est vraiment agréable.”</p>
                                   <div class="tst-author">
                                        <h4>Sigrid R</h4>
                                        <a class="tst-link" href="https://maps.app.goo.gl/MLgAa4xAxknpNbGw6" target="_blank" rel="noopener noreferrer">View original Google Maps review</a>
@@ -242,7 +251,7 @@
                              <div class="item testimonial-card">
                                   <div class="tst-stars" aria-label="5 stars">★★★★★</div>
                                   <i class="fa fa-quote-left testimonial-quote"></i>
-                                  <p>“A truly lovely spot in Montmartre — delicious food, warm service, and very good value for money. It feels like a hidden gem you want to return to.”</p>
+                                  <p id="review-description2">“A truly lovely spot in Montmartre — delicious food, warm service, and very good value for money. It feels like a hidden gem you want to return to.”</p>
                                   <div class="tst-author">
                                        <h4>Camille L.</h4>
                                        <a class="tst-link" href="https://www.google.com/maps/place/Colline+d%27Asie+-+Del+Sarte" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
@@ -252,7 +261,7 @@
                              <div class="item testimonial-card">
                                   <div class="tst-stars" aria-label="5 stars">★★★★★</div>
                                   <i class="fa fa-quote-left testimonial-quote"></i>
-                                  <p>“Excellent Vietnamese flavors, fast service, and a relaxed atmosphere. Perfect for a casual lunch or dinner in Paris.”</p>
+                                  <p id="review-description3">“Excellent Vietnamese flavors, fast service, and a relaxed atmosphere. Perfect for a casual lunch or dinner in Paris.”</p>
                                   <div class="tst-author">
                                        <h4>Julien P.</h4>
                                        <a class="tst-link" href="https://www.google.com/maps/place/Colline+d%27Asie+-+Del+Sarte" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
@@ -262,7 +271,7 @@
                              <div class="item testimonial-card">
                                   <div class="tst-stars" aria-label="5 stars">★★★★★</div>
                                   <i class="fa fa-quote-left testimonial-quote"></i>
-                                  <p>“One of the best-value meals I’ve had in Paris. Fresh, flavorful, and the staff makes you feel genuinely welcome.”</p>
+                                  <p id="review-description4">“One of the best-value meals I’ve had in Paris. Fresh, flavorful, and the staff makes you feel genuinely welcome.”</p>
                                   <div class="tst-author">
                                        <h4>Marie T.</h4>
                                        <a class="tst-link" href="https://www.google.com/maps/place/Colline+d%27Asie+-+Del+Sarte" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
@@ -272,7 +281,7 @@
                              <div class="item testimonial-card">
                                   <div class="tst-stars" aria-label="5 stars">★★★★★</div>
                                   <i class="fa fa-quote-left testimonial-quote"></i>
-                                  <p>“Beautifully prepared dishes, very friendly team, and a comfortable place to enjoy a relaxed meal without the tourist rush.”</p>
+                                  <p id="review-description5">“Beautifully prepared dishes, very friendly team, and a comfortable place to enjoy a relaxed meal without the tourist rush.”</p>
                                   <div class="tst-author">
                                        <h4>Olivier D.</h4>
                                        <a class="tst-link" href="https://www.google.com/maps/place/Colline+d%27Asie+-+Del+Sarte" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
@@ -282,7 +291,7 @@
                              <div class="item testimonial-card">
                                   <div class="tst-stars" aria-label="5 stars">★★★★★</div>
                                   <i class="fa fa-quote-left testimonial-quote"></i>
-                                  <p>“A hidden gem for anyone looking for authentic Asian flavors in Paris. Great food, great service, and a very pleasant atmosphere.”</p>
+                                  <p id="review-description6">“A hidden gem for anyone looking for authentic Asian flavors in Paris. Great food, great service, and a very pleasant atmosphere.”</p>
                                   <div class="tst-author">
                                        <h4>Elise B.</h4>
                                        <a class="tst-link" href="https://www.google.com/maps/place/Colline+d%27Asie+-+Del+Sarte" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
@@ -316,7 +325,7 @@
 
                         <div class="col-md-12 col-sm-12">
                              <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                                  <h2>Contact Us</h2>
+                                  <h2>Contact</h2>
                              </div>
                         </div>
 
@@ -338,11 +347,11 @@
                              </div>
 
                              <div class="col-md-12 col-sm-12">
-                                  <input type="text" class="form-control" id="cf-subject" name="subject" placeholder="Subject">
+                                  <input type="text" class="form-control" id="cf-subject" name="subject" placeholder="Sujet">
 
-                                  <textarea class="form-control" rows="6" id="cf-message" name="message" placeholder="Write your reservation request"></textarea>
+                                  <textarea class="form-control" rows="6" id="cf-message" name="message" placeholder="Rédigez votre demande de réservation"></textarea>
 
-                                  <button type="submit" class="form-control" id="cf-submit" name="submit">Send Message</button>
+                                  <button type="submit" class="form-control" id="cf-submit" name="submit">Envoyer</button>
                              </div>
                         </form>
                    </div>
@@ -366,9 +375,9 @@
                                   <p>France</p>
                               </address>
                               <ul class="footer-links">
-                                  <li><a href="https://maps.app.goo.gl/XwizjD2qvMixLxce6" target="_blank" rel="noopener"><i class="fa fa-map-marker"></i> Open in Google Maps</a></li>
+                                  <li><a href="https://maps.app.goo.gl/XwizjD2qvMixLxce6" id="footer-googlemaps-delsarte" data-translate="footer-googlemaps" target="_blank" rel="noopener"><i class="fa fa-map-marker"></i> Ouvrir dans Google Maps</a></li>
                                   <li><a href="tel:+33155791682"><i class="fa fa-phone"></i> +33 1 55 79 16 82</a></li>
-                                  <li><a href="https://commande-en-ligne.laddition.com/commande-en-ligne/collinedasie/carte" target="_blank" rel="noopener"><i class="fa fa-cutlery"></i> Order online</a></li>
+                                  <li><a href="https://commande-en-ligne.laddition.com/commande-en-ligne/collinedasie/carte" id="footer-orderonline-delsarte" data-translate="footer-orderonline" target="_blank" rel="noopener"><i class="fa fa-cutlery"></i> Commander en ligne</a></li>
                                   <li><a href="https://www.facebook.com/collinedasiedelsarte" target="_blank" rel="noopener"><i class="fa fa-facebook-square"></i> Facebook</a></li>
                                   <li><a href="https://www.instagram.com/collinedasie_delsarte/" target="_blank" rel="noopener"><i class="fa fa-instagram"></i> Instagram</a></li>
                               </ul>
@@ -386,9 +395,9 @@
                                   <p>France</p>
                              </address>
                              <ul class="footer-links">
-                                  <li><a href="https://maps.app.goo.gl/m7QRtjNuuMhio2Mx6" target="_blank" rel="noopener"><i class="fa fa-map-marker"></i> Open in Google Maps</a></li>
+                                  <li><a href="https://maps.app.goo.gl/m7QRtjNuuMhio2Mx6" id="footer-googlemaps-clignancourt" data-translate="footer-googlemaps" target="_blank" rel="noopener"><i class="fa fa-map-marker"></i> Ouvrir dans Google Maps</a></li>
                                   <li><a href="tel:+33146069245"><i class="fa fa-phone"></i> +33 1 46 06 92 45</a></li>
-                                  <li><a href="https://deliveroo.fr/fr/menu/paris/18eme-jules-joffrin/colline-dasie" target="_blank" rel="noopener"><i class="fa fa-cutlery"></i> Order online</a></li>
+                                  <li><a href="https://deliveroo.fr/fr/menu/paris/18eme-jules-joffrin/colline-dasie" id="footer-orderonline-clignancourt" data-translate="footer-orderonline" target="_blank" rel="noopener"><i class="fa fa-cutlery"></i> Commander en ligne</a></li>
                                   <li><a href="https://www.facebook.com/collinedasieclignancourt" target="_blank" rel="noopener"><i class="fa fa-facebook-square"></i> Facebook</a></li>
                                   <li><a href="https://www.instagram.com/collinedasieclignancourt/" target="_blank" rel="noopener"><i class="fa fa-instagram"></i> Instagram</a></li>
                              </ul>
@@ -398,14 +407,15 @@
                    <div class="col-md-4 col-sm-12">
                         <div class="footer-card footer-contact-card wow fadeInUp" data-wow-delay="0.4s">
                              <div class="section-title">
-                                  <h2>Contact</h2>
+                                  <h2 id="contact-title">Contact</h2>
                              </div>
-                             <p>Call us for dining, private events, or takeaway enquiries.</p>
-                             <p class="footer-contact"><a href="tel:+33155791682">Del Sarte: +33 1 55 79 16 82</a></p>
+                             <p id="contact-description">Contactez-nous pour réserver, privatiser ou commander à emporter.</p>
+                             <p class="footer-contact"><a href="tel:+33155791682">Del Sarte : +33 1 55 79 16 82</a></p>
                              <p class="footer-contact"><a href="tel:+33146069245">Clignancourt: +33 1 46 06 92 45</a></p>
 
                              <div class="copyright-text"> 
                                   <p>Copyright &copy; 2026<br>Colline d'Asie<br>Paris • Two restaurants</p>
+                                  <a href="https://github.com/Helpxio27/" target="_blank" rel="noopener">Made by Helpxio</a>
                              </div>
                         </div>
                    </div>
