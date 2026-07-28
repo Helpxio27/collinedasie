@@ -416,6 +416,34 @@ section {
     }
 }
 
+.lang-btn {
+    background: #000000;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 1px;
+}
+
+.lang-btn:hover {
+    background: #e0e0e0;
+    border-color: #999;
+    transform: scale(1.05);
+}
+
+.lang-btn:active {
+    transform: scale(0.95);
+}
+
+
 /*---------------------------------------
     HOME              
 -----------------------------------------*/
@@ -1260,6 +1288,13 @@ footer {
   padding: 0px 0 !important;
   padding-bottom: 60px !important;
   background: #ffd763;
+}
+
+.fake-footer {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 0px 0 !important;
+  padding-bottom: 60px !important;
+  background: #000000;
 }
 
 .custompadd {
