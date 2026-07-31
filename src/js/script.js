@@ -7,28 +7,36 @@ class Page {
     translations = {
         fr: {
             name: "collinedasie",
+            // page [global]
             "restaurant-name":"Colline D'Asie",
-            "nav-about": "À propos", 
-            "nav-team":"Nous trouver",
-            "nav-menu":"Infos & Contact",
+            // nav bar 
+            "nav-menudelsarte": "Menu Del Sarte", 
+            "nav-menuclignancourt":"Menu Clignancourt",
+            "nav-contact":"Contact",
+            "nav-about":"A Propos",
             "nav-CallNow":" Changer de Langue: ",
+            // nav icon
             "nav-language":"Langue",
+            
+            // main [page]
+            // page 1
             "hero-title1":"Restaurant asiatique raffiné",
             "hero-description1":"Des saveurs authentiques dans un cadre moderne et chaleureux",
             "hero-button1":"Découvrir le menu",
+            //page2
             "hero-title2":"Votre petit-déjeuner parfait",
             "hero-description2":"La meilleure qualité culinaire est aussi ici !",
             "hero-button2":"Voir le menu",
+            //page3
             "hero-title3":"Nouveau restaurant en ville",
             "hero-description3":"Profitez de nos menus spéciaux chaque dimanche et vendredi",
             "hero-button3":"Réservation",
-            "about-title":"A PROPOS",
-            "about-description":"Colline d’Asie est une maison familiale parisienne qui célèbre la cuisine vietnamienne et cambodgienne à travers des recettes authentiques transmises au fil des générations. Depuis ses débuts, l’enseigne partage une cuisine généreuse, faite maison et inspirée des traditions du Sud-Est asiatique, entre grands classiques incontournables et spécialités plus confidentielles. À travers ses deux adresses situées au cœur de Montmartre, Colline d’Asie propose deux expériences différentes mais complémentaires : une adresse traditionnelle où retrouver les grands classiques de la cuisine vietnamienne et khmère, et un lieu plus moderne pensé pour une pause gourmande autour des spécialités asiatiques.",
-            "about-description-delsarte":"Situé au 21 rue André del Sarte, Colline d’Asie –   Del Sarte est l’adresse historique de la maison. Ce restaurant à table propose une cuisine vietnamienne et khmère authentique, dans une ambiance chaleureuse et conviviale. La carte met à l’honneur les grands classiques du Sud-Est asiatique comme le bo bun, le pho, le curry khmer ou encore le khor ko. Apprécié pour ses recettes familiales, ses portions généreuses et son authenticité, c’est une adresse où découvrir les saveurs traditionnelles de la maison.",
-            "about-description-clignancourt":"Située au 18 rue de Clignancourt, Colline d’Asie – Clignancourt propose une approche plus moderne de la cuisine asiatique. Dans un esprit cantine urbaine et coffee-shop, l’adresse met à l’honneur les spécialités de rue comme les banh mi, les baos, les soupes et les bobuns, accompagnées de desserts maison et de boissons originales. Plus décontractée et contemporaine, cette adresse permet de retrouver l’univers familial de Colline d’Asie dans un format différent, adapté aux pauses gourmandes du quotidien.",
-            "about-button-menu":"Menu en ligne",
+            
+            // Localisation
             "map-title":"OÙ SOMMES-NOUS",
             "map-description":"Venez nous rendre visite dans l'un de nos deux restaurants Colline d'Asie à Paris.",
+            
+            // REVIEW
             "review-title":"Avis clients",
             "review-description1":"“J’adore cette adresse ! Peu fréquentée par les touristes, elle permet d’un peu souffler quand on habite à Montmartre en période estivale. Le service est parfait, la nourriture est délicieuse, et l’ambiance est vraiment agréable.”",
             "review-description2":"“Un lieu charmant à Montmartre — une cuisine délicieuse, un service chaleureux et un excellent rapport qualité-prix.”",
@@ -36,10 +44,26 @@ class Page {
             "review-description4":"“Un des meilleurs repas à Paris. Frais, savoureux, et l'équipe vous accueille comme chez vous.”",
             "review-description5":"“Des plats magnifiquement préparés, une équipe très sympathique et un cadre agréable loin de la foule de touristes.”",
             "review-description6":"“Un trésor caché pour tous ceux qui cherchent des saveurs asiatiques authentiques à Paris. Très bon service et atmosphère agréable.”",
+            
+            // contact [footer]
             "footer-googlemaps":"Ouvrir dans Google Maps",
             "footer-orderonline":"Commander en ligne",
             "contact-title":"Contact",
-            "contact-description":"Contactez-nous pour en savoir plus sur nos restaurants, nos spécialités ou vos commandes à emporter."
+            "contact-description":"Contactez-nous pour en savoir plus sur nos restaurants, nos spécialités ou vos commandes à emporter.",
+           
+            // about [page]
+            "about-title":"A PROPOS",
+            "about-description":"Colline d’Asie est une maison familiale parisienne qui célèbre la cuisine vietnamienne et cambodgienne à travers des recettes authentiques transmises au fil des générations. Depuis ses débuts, l’enseigne partage une cuisine généreuse, faite maison et inspirée des traditions du Sud-Est asiatique, entre grands classiques incontournables et spécialités plus confidentielles. À travers ses deux adresses situées au cœur de Montmartre, Colline d’Asie propose deux expériences différentes mais complémentaires : une adresse traditionnelle où retrouver les grands classiques de la cuisine vietnamienne et khmère, et un lieu plus moderne pensé pour une pause gourmande autour des spécialités asiatiques.",
+            "about-description-delsarte":"Situé au 21 rue André del Sarte, Colline d’Asie –   Del Sarte est l’adresse historique de la maison. Ce restaurant à table propose une cuisine vietnamienne et khmère authentique, dans une ambiance chaleureuse et conviviale. La carte met à l’honneur les grands classiques du Sud-Est asiatique comme le bo bun, le pho, le curry khmer ou encore le khor ko. Apprécié pour ses recettes familiales, ses portions généreuses et son authenticité, c’est une adresse où découvrir les saveurs traditionnelles de la maison.",
+            "about-description-clignancourt":"Située au 18 rue de Clignancourt, Colline d’Asie – Clignancourt propose une approche plus moderne de la cuisine asiatique. Dans un esprit cantine urbaine et coffee-shop, l’adresse met à l’honneur les spécialités de rue comme les banh mi, les baos, les soupes et les bobuns, accompagnées de desserts maison et de boissons originales. Plus décontractée et contemporaine, cette adresse permet de retrouver l’univers familial de Colline d’Asie dans un format différent, adapté aux pauses gourmandes du quotidien.",
+            "about-button-menu":"Menu en ligne",
+
+            // menu delsarte [page]
+            "menudel-title":"menudel-title",
+            "menudel-description":"menudel-description",
+            // menu clignancout [page]
+            "menucli-title":"menucli-title",
+            "menucli-description":"menucli-description"
         },
         en: {
             name: "collinedasie",
