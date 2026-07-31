@@ -67,28 +67,41 @@ class Page {
         },
         en: {
             name: "collinedasie",
-            "restaurant-name":"Colline D'Asie", 
-            "nav-about": "About", 
-            "nav-team":"Find Us",
-            "nav-menu":"Infos & Contact",
+
+            // page [global]
+            "restaurant-name":"Colline D'Asie",
+
+            // nav bar
+            "nav-menudelsarte": "Menu Del Sarte",
+            "nav-menuclignancourt":"Menu Clignancourt",
+            "nav-contact":"Contact",
+            "nav-about":"About",
             "nav-CallNow":" Change Languages: ",
+
+            // nav icon
             "nav-language":"Language",
+
+            // main [page]
+            // page 1
             "hero-title1":"Fine Asian Dining",
             "hero-description1":"Authentic flavors in a warm, modern setting",
             "hero-button1":"Explore our menu",
+
+            // page 2
             "hero-title2":"Your Perfect Breakfast",
             "hero-description2":"The best culinary quality is here too!",
             "hero-button2":"Discover menu",
+
+            // page 3
             "hero-title3":"New Restaurant in Town",
             "hero-description3":"Enjoy our special menus every Sunday and Friday",
             "hero-button3":"Reservation",
-            "about-title":"ABOUT US",
-            "about-description":"Colline D'Asie is a Parisian family restaurant celebrating Vietnamese and Cambodian cuisine through authentic recipes passed down through generations. Since its beginnings, the brand has shared generous homemade dishes inspired by Southeast Asian traditions, blending classic favorites with lesser-known specialties. With its two Montmartre locations, Colline D'Asie offers two complementary experiences: a traditional dining room for Vietnamese and Khmer classics, and a more modern spot designed for a quick gourmet break with Asian specialties.",
-            "about-description-delsarte":"Located at 21 rue André del Sarte, Colline D'Asie – Del Sarte is the house’s historic address. This sit-down restaurant serves authentic Vietnamese and Khmer cuisine in a warm, welcoming atmosphere. The menu highlights Southeast Asian classics like bo bun, pho, Khmer curry, and khor ko. Known for its family recipes, generous portions, and authenticity, it is a place to discover the traditional flavors of the house.",
-            "about-description-clignancourt":"Situated at 18 rue de Clignancourt, Colline D'Asie – Clignancourt offers a more modern take on Asian cuisine. In an urban canteen and coffee-shop atmosphere, the restaurant showcases street food favorites like banh mi, baos, soups, and bobuns, accompanied by homemade desserts and original drinks. More relaxed and contemporary, this location brings the family spirit of Colline D'Asie to a different format, perfect for everyday gourmet breaks.",
-            "about-button-menu":"Explore Our Menu",
+
+            // Localisation
             "map-title":"WHERE ARE WE",
-            "map-description":"Visit us at one of our two Colline D'Asie restaurants in Paris.", 
+            "map-description":"Visit us at one of our two Colline D'Asie restaurants in Paris.",
+
+            // REVIEW
             "review-title":"Testimonials",
             "review-description1":"“I love this place! It is less crowded by tourists, which makes it a great spot to relax when staying in Montmartre during summer. The service is perfect, the food is delicious, and the atmosphere is very pleasant.”",
             "review-description2":"“A truly lovely spot in Montmartre — delicious food, warm service, and very good value for money.”",
@@ -96,10 +109,27 @@ class Page {
             "review-description4":"“One of the best-value meals I’ve had in Paris. Fresh, flavorful, and the staff makes you feel genuinely welcome.”",
             "review-description5":"“Beautifully prepared dishes, a very friendly team, and a comfortable place to enjoy a relaxed meal away from the tourist crowds.”",
             "review-description6":"“A hidden gem for anyone looking for authentic Asian flavors in Paris. Great food, great service, and a very pleasant atmosphere.”",
-            "footer-googlemaps":"Open in Google Maps", 
-            "footer-orderonline":"Order online", 
+
+            // contact [footer]
+            "footer-googlemaps":"Open in Google Maps",
+            "footer-orderonline":"Order online",
             "contact-title":"Contact",
-            "contact-description":"Contact us to learn more about our restaurants, specialties, or take-away orders."
+            "contact-description":"Contact us to learn more about our restaurants, specialties, or take-away orders.",
+
+            // about [page]
+            "about-title":"ABOUT US",
+            "about-description":"Colline D'Asie is a Parisian family restaurant celebrating Vietnamese and Cambodian cuisine through authentic recipes passed down through generations. Since its beginnings, the brand has shared generous homemade dishes inspired by Southeast Asian traditions, blending classic favorites with lesser-known specialties. With its two Montmartre locations, Colline D'Asie offers two complementary experiences: a traditional dining room for Vietnamese and Khmer classics, and a more modern spot designed for a quick gourmet break with Asian specialties.",
+            "about-description-delsarte":"Located at 21 rue André del Sarte, Colline D'Asie – Del Sarte is the house’s historic address. This sit-down restaurant serves authentic Vietnamese and Khmer cuisine in a warm, welcoming atmosphere. The menu highlights Southeast Asian classics like bo bun, pho, Khmer curry, and khor ko. Known for its family recipes, generous portions, and authenticity, it is a place to discover the traditional flavors of the house.",
+            "about-description-clignancourt":"Situated at 18 rue de Clignancourt, Colline D'Asie – Clignancourt offers a more modern take on Asian cuisine. In an urban canteen and coffee-shop atmosphere, the restaurant showcases street food favorites like banh mi, baos, soups, and bobuns, accompanied by homemade desserts and original drinks. More relaxed and contemporary, this location brings the family spirit of Colline D'Asie to a different format, perfect for everyday gourmet breaks.",
+            "about-button-menu":"Explore Our Menu",
+
+            // menu delsarte [page]
+            "menudel-title":"menudel-title",
+            "menudel-description":"menudel-description",
+
+            // menu clignancourt [page]
+            "menucli-title":"menucli-title",
+            "menucli-description":"menucli-description"
         }
     };
 
