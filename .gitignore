@@ -1,1 +1,26 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# VS Code (optional)
 .vscode/
+
+# JetBrains IDEs (optional)
+.idea/
+
+# Logs
+*.log
+
+# Environment files (if you ever add them)
+.env
+.env.*
+
+# Node (if you later add npm)
+node_modules/
+
+# Build outputs (if you later add a bundler)
+dist/
+build/
