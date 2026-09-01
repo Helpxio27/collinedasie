@@ -72,67 +72,75 @@
                                 </button>
                             </li>
                         </ul>
-                        
                         <script>
-                        let lang = 'fr';
-                        
-                        function toggleLang() {
-                            lang = lang === 'fr' ? 'en' : 'fr';
-                            setLang(lang);
-                            document.getElementById('flag').textContent = lang === 'fr' ? '🇫🇷' : '🇬🇧';
-                        }
+                            let lang = 'fr';
+                            
+                            function toggleLang() {
+                                lang = lang === 'fr' ? 'en' : 'fr';
+                                setLang(lang);
+                                document.getElementById('flag').textContent = lang === 'fr' ? '🇫🇷' : '🇬🇧';
+                            }
                         </script>
                             <!--<a href="#" id="nav-language" class="dropdown-toggle language-btn" data-toggle="dropdown"> 🌐 Langue <span class="caret"></span> </a> 
                             <ul class="dropdown-menu"> 
                                 <li><button onclick="setLang('fr')" class="force-white force-white-dropdown lang-btn active" data-lang="fr" aria-label="Français">🇫🇷 Français</button></li> 
                                 <li><button onclick="setLang('en')" class="force-white force-white-dropdown lang-btn" data-lang="en" aria-label="English">🇬🇧 English</button></li> -->
-                            </ul> 
-                        </li> 
+                            </ul>
+                        </li>
                     </ul>
               </div>
          </div>
     </section>
 
 
-    
-
-    <!-- ABOUT -->
+    <!-- ACTUAL MENU -->
     <section id="about" data-stellar-background-ratio="0.5" style="padding: 0;">
         <img src="src/images/carrousel-sep.png" class="header" loading="lazy">
-    
+
         <div class="container">
             <div class="about-section-layout">
-    
+
                 <div class="about-decor-col">
                     <div class="about-deco-line"></div>
                 </div>
-    
+
                 <div class="about-main-col">
-    
-                    <div class="about-us">
-                        <h2>
-                            <i class="fa fa-asterisk"></i>
-                            <span id="menucli-title">A PROPOS</span>
-                        </h2>
-    
-                        <p id="menucli-description">
-                            placeholder
-                        </p>
-                    </div>
-                </div>
-    
+                    <div class="menu-content">
+                        <div class="about-menu">
+                                
+                                <h2>
+                                    <br>
+                                    <i class="fa fa-asterisk"></i>
+                                    <span id="menucli-title"></span>
+                                </h2>
+                                <h3 id="menudel-description">
+                                    placeholder
+                                </h3> <br> <br> 
+                        </div>
+
+                        <div class="menuclig-container">
+                            <!-- Direct link to image file -->
+                            <a href="src/images/list-menu-clignancourt-client-1.jpg" target="_blank">
+                                <img src="src/images/list-menu-clignancourt-client-1.jpg" alt="Menu Clignancourt page 1" loading="lazy">
+                            </a>
+                            
+                            <a href="src/images/list-menu-clignancourt-client-2.jpg" target="_blank">
+                                <img src="src/images/list-menu-clignancourt-client-2.jpg" alt="Menu Clignancourt page 2" loading="lazy">
+                            </a>
+
+                        </div> <!-- menuclig-container -->
+                    </div> <!-- menu-content -->
+                </div> <!-- about-main-col -->
+
                 <div class="about-decor-col">
                     <div class="about-deco-line"></div>
                 </div>
-    
+
             </div>
         </div>
     </section>
 
-
-    
     <img src="src/images/bl.png" class="header" loading="lazy">
-
     <section id="fake-footer" data-stellar-background-ratio="0.5">
     <div class="container">
         <div class="row">

@@ -1,0 +1,602 @@
+/* Styles préfixés avec .menu-wiki pour éviter les conflits */
+    .menu-wiki-container {
+      all: initial;
+      display: block;
+      font-family: 'Linux Libertine', Georgia, 'Times New Roman', serif;
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px 16px 40px;
+      box-sizing: border-box;
+      color: #202122;
+      line-height: 1.6;
+    }
+
+    .menu-wiki-container * {
+      all: initial;
+      display: revert;
+      box-sizing: border-box;
+      font-family: inherit;
+    }
+
+    .menu-wiki-wrapper {
+      width: 100%;
+    }
+
+    .menu-wiki-wrapper h1 {
+      font-family: 'Linux Libertine', Georgia, 'Times New Roman', serif;
+      font-weight: 400;
+      font-size: 2.2rem;
+      color: #000;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #a2a9b1;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .menu-wiki-wrapper h1 small {
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: #54595d;
+      margin-left: 8px;
+    }
+
+    /* --- accordéon à la Wikipedia --- */
+    .menu-wiki-section {
+      margin-bottom: 6px;
+      border: 1px solid #c8ccd1;
+      border-radius: 0;
+      background: transparent;
+    }
+
+    .menu-wiki-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 12px 6px 8px;
+      background: #f8f9fa;
+      cursor: pointer;
+      user-select: none;
+      border-bottom: 1px solid #c8ccd1;
+      transition: background 0.1s;
+    }
+
+    .menu-wiki-header:hover {
+      background: #eaecf0;
+    }
+
+    .menu-wiki-title {
+      font-family: 'Linux Libertine', Georgia, 'Times New Roman', serif;
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: #000;
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .menu-wiki-badge {
+      font-size: 0.65rem;
+      font-weight: 400;
+      color: #54595d;
+      background: transparent;
+      padding: 0 4px;
+    }
+
+    .menu-wiki-toggle {
+      font-size: 1.2rem;
+      line-height: 1;
+      color: #72777d;
+      transition: transform 0.2s ease;
+      width: 24px;
+      text-align: center;
+      flex-shrink: 0;
+      font-weight: 300;
+    }
+
+    .menu-wiki-section.open .menu-wiki-toggle {
+      transform: rotate(180deg);
+    }
+
+    /* contenu item */
+    .menu-wiki-content {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.25s ease;
+      background: transparent;
+    }
+
+    .menu-wiki-section.open .menu-wiki-content {
+      grid-template-rows: 1fr;
+    }
+
+    .menu-wiki-inner {
+      overflow: hidden;
+      padding: 8px 4px 4px 8px;
+      background: transparent;
+    }
+
+    .menu-wiki-item-wrapper {
+      border-bottom: 1px solid #eaecf0;
+      padding: 6px 0 3px 0;
+    }
+
+    .menu-wiki-item-wrapper:last-child {
+      border-bottom: none;
+    }
+
+    .menu-wiki-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 2px 4px 2px 0;
+    }
+
+    .menu-wiki-name {
+      font-family: 'Linux Libertine', Georgia, 'Times New Roman', serif;
+      font-weight: 400;
+      color: #202122;
+      font-size: 1rem;
+    }
+
+    .menu-wiki-price {
+      font-family: 'Linux Libertine', Georgia, 'Times New Roman', serif;
+      font-weight: 400;
+      color: #202122;
+      font-size: 0.95rem;
+      padding-left: 20px;
+      white-space: nowrap;
+    }
+
+    .menu-wiki-meta {
+      font-family: 'Linux Libertine', Georgia, 'Times New Roman', serif;
+      font-size: 0.8rem;
+      color: #54595d;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 16px;
+      padding: 2px 4px 4px 0;
+      margin-top: 0;
+      background: transparent;
+      border-radius: 0;
+      font-style: italic;
+    }
+
+    .menu-wiki-meta span {
+      background: transparent;
+      padding: 0 2px;
+      border-radius: 0;
+      line-height: 1.6;
+      display: inline-block;
+    }
+
+    .menu-wiki-meta .vat-badge {
+      background: transparent;
+      color: #54595d;
+    }
+
+    .menu-wiki-empty {
+      padding: 12px 8px;
+      color: #54595d;
+      font-size: 0.95rem;
+      text-align: center;
+      font-style: italic;
+    }
+
+    /* mobile fine tuning */
+    @media (max-width: 480px) {
+      .menu-wiki-container {
+        padding: 12px 8px 30px;
+      }
+      .menu-wiki-wrapper h1 {
+        font-size: 1.8rem;
+      }
+      .menu-wiki-title {
+        font-size: 1.2rem;
+      }
+      .menu-wiki-name {
+        font-size: 0.95rem;
+      }
+      .menu-wiki-price {
+        font-size: 0.9rem;
+      }
+      .menu-wiki-meta {
+        font-size: 0.75rem;
+      }
+    }
+
+    /* accessibilité */
+    .menu-wiki-header:focus-visible {
+      outline: 2px solid #3366cc;
+      outline-offset: -2px;
+    }
+
+    /* ABOUT MENU (desktop + mobile) moved from menu_clignancourt.html */
+    .about-menu {
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    .about-menu h2 {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .about-menu h2 .fa {
+      flex: 0 0 auto;
+    }
+
+    .about-menu p {
+      margin: 0 0 14px;
+      line-height: 1.55;
+      font-size: 16px;
+    }
+
+    .about-menu p strong {
+      display: block;
+      margin: 24px 0 14px;
+      font-size: 20px;
+    }
+
+    .about-menu hr {
+      margin: 26px 0;
+      opacity: .22;
+    }
+
+    .about-menu .menu-item {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0 8px;
+      margin: 0 0 10px;
+    }
+
+    .about-menu .menu-item .menu-name {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    .about-menu .menu-dots {
+      flex: 0 1 auto;
+      overflow: hidden;
+      white-space: nowrap;
+      opacity: .65;
+    }
+
+    .about-menu .menu-item .menu-price {
+      flex: 0 0 auto;
+      white-space: nowrap;
+      font-weight: 600;
+    }
+
+    .about-menu .menu-description {
+      flex: 0 0 100%;
+      order: 3;
+      margin-top: 4px;
+      padding-left: 0;
+      font-size: .88em;
+      line-height: 1.5;
+      opacity: .58;
+    }
+
+    .about-menu .menu-description-block {
+      display: block;
+      margin-top: 4px;
+      font-size: .88em;
+      line-height: 1.5;
+      opacity: .58;
+    }
+
+    .about-menu,
+    .about-menu * {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 767px) {
+      #about {
+        overflow-x: hidden;
+      }
+
+      #about .container {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .about-section-layout {
+        display: block;
+      }
+
+      .about-decor-col {
+        display: none;
+      }
+
+      .about-main-col {
+        width: 100%;
+      }
+
+      .about-menu {
+        width: 100%;
+        padding: 0;
+      }
+
+      .about-menu h2 {
+        font-size: 22px;
+        line-height: 1.2;
+        gap: 9px;
+        margin: 18px 0 22px;
+      }
+
+      .about-menu h2 .fa {
+        font-size: 16px;
+      }
+
+      .about-menu p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 13px;
+        overflow-wrap: anywhere;
+        word-break: normal;
+      }
+      .about-menu p strong {
+        font-size: 18px;
+        margin-top: 22px;
+      }
+
+      .about-menu .menu-dots {
+        display: none;
+      }
+
+      .about-menu .menu-item {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        column-gap: 10px;
+        row-gap: 3px;
+        align-items: start;
+        margin-bottom: 14px;
+      }
+
+      .about-menu .menu-name {
+        min-width: 0;
+        line-height: 1.35;
+      }
+
+      .about-menu .menu-price {
+        align-self: start;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+
+      .about-menu .menu-description,
+      .about-menu .menu-description-block {
+        grid-column: 1 / -1;
+        margin-top: 2px;
+        font-size: 13px;
+        line-height: 1.48;
+        opacity: .50;
+        padding-right: 4px;
+      }
+
+      .about-menu hr {
+        margin: 22px 0;
+      }
+
+      .about-menu .compact-item {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .about-menu .compact-item .menu-price {
+        float: right;
+        margin-left: 8px;
+      }
+
+      .about-menu .compact-item .menu-name {
+        display: inline;
+      }
+    }
+
+    @media (max-width: 380px) {
+      #about .container {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .about-menu h2 {
+        font-size: 20px;
+      }
+
+      .about-menu p {
+        font-size: 14px;
+      }
+
+      .about-menu .menu-description,
+      .about-menu .menu-description-block {
+        font-size: 12.5px;
+      }
+    }
+
+
+
+/* idk what every up there is for */
+
+
+/* =========================================================
+   MENU CLIGNANCOURT
+   All classes prefixed with "menuclig-"
+   ========================================================= */
+
+.menuclig-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ---------------------------------------------------------
+   HEADER
+   --------------------------------------------------------- */
+
+.menuclig-header {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.menuclig-title {
+    margin: 0;
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+}
+
+
+/* ---------------------------------------------------------
+   SECTION
+   --------------------------------------------------------- */
+
+.menuclig-section {
+    margin-bottom: 45px;
+    background: transparent;
+}
+
+.menuclig-section-title {
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid #222;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+
+/* ---------------------------------------------------------
+   MENU ITEM
+   --------------------------------------------------------- */
+
+.menuclig-item {
+    padding: 15px 0;
+
+    border-bottom: 1px solid #ffffff00;
+}
+
+.menuclig-item:last-child {
+    border-bottom: none;
+}
+
+
+/* ---------------------------------------------------------
+   ITEM HEADER
+   --------------------------------------------------------- */
+
+.menuclig-item-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.menuclig-item-name {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #000 !important;
+}
+
+.menuclig-item-price {
+    flex-shrink: 0;
+
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+/* ---------------------------------------------------------
+   DESCRIPTION
+   --------------------------------------------------------- */
+
+.menuclig-item-description {
+    margin: 6px 0 0;
+
+    color: #666;
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+
+/* ---------------------------------------------------------
+   FEATURED ITEMS
+   --------------------------------------------------------- */
+
+.menuclig-item--featured {
+    margin-bottom: 12px;
+    padding: 20px;
+
+    background: #000000;
+    border: none;
+    border-radius: 10px;
+}
+
+.menuclig-item--featured:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .menuclig-container {
+        padding: 20px 16px 40px;
+    }
+
+    .menuclig-header {
+        margin-bottom: 30px;
+    }
+
+    .menuclig-section {
+        margin-bottom: 35px;
+    }
+
+    .menuclig-section-title {
+        font-size: 1.3rem;
+    }
+
+    .menuclig-item {
+        padding: 14px 0;
+    }
+
+    .menuclig-item-header {
+        gap: 10px;
+    }
+
+    .menuclig-item-name {
+        font-size: 1rem;
+    }
+
+    .menuclig-item-description {
+        font-size: 0.9rem;
+    }
+
+    .menuclig-item--featured {
+        padding: 16px;
+    }
+}
