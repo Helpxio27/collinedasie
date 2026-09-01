@@ -58,12 +58,12 @@ class Page {
             "about-description-clignancourt":"Située au 18 rue de Clignancourt, Colline d’Asie – Clignancourt propose une approche plus moderne de la cuisine asiatique. Dans un esprit cantine urbaine et coffee-shop, l’adresse met à l’honneur les spécialités de rue comme les banh mi, les baos, les soupes et les bobuns, accompagnées de desserts maison et de boissons originales. Plus décontractée et contemporaine, cette adresse permet de retrouver l’univers familial de Colline d’Asie dans un format différent, adapté aux pauses gourmandes du quotidien.",
             "about-button-menu":"Menu en ligne",
 
-            // menu delsarte [page]
-            "menudel-title":"menudel-title",
-            "menudel-description":"menudel-description",
-            // menu clignancout [page]
-            "menucli-title":"menucli-title",
-            "menucli-description":"menucli-description"
+            // menu delsarte [page] 
+            "menudel-title":"Menu Colline D'Asie Del Sarte", 
+            "menudel-description":"Cliquez sur les menus pour les consulter dans le navigateur.", 
+            // menu clignancourt [page] 
+            "menucli-title":"Menu Colline D'Asie Clignancourt", 
+            "menucli-description":"Cliquez sur les menus pour les consulter dans le navigateur."
         },
         en: {
             name: "collinedasie",
@@ -124,12 +124,12 @@ class Page {
             "about-button-menu":"Explore Our Menu",
 
             // menu delsarte [page]
-            "menudel-title":"menudel-title",
-            "menudel-description":"menudel-description",
+            "menudel-title":"Menu Colline D'Asie Del Sarte",
+            "menudel-description":"Click on the menus for browser view.",
 
             // menu clignancourt [page]
-            "menucli-title":"menucli-title",
-            "menucli-description":"menucli-description"
+            "menucli-title":"Menu Colline D'Asie Clignancourt",
+            "menucli-description":"Click on the menus for browser view."
         }
     };
 
